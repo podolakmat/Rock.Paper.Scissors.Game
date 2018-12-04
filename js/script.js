@@ -13,7 +13,7 @@ var playerScore = 0;
 window.onload = function() {
     alert("Enter Your name - at least 3 characters");
     do {
-        var name = prompt("Ma name is...");
+        var name = prompt("My name is...");
     }
     while (name.length < 3)
     playerName.innerHTML = name;
