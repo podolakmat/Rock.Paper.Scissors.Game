@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1>Rock Paper Scissors </h1>
+
+        <div class="game_field">
+            <div class="player player-box">
+                <i class="fas fa-question-circle" id="user"></i>
+                <p class="player_type" id="player_name">Player</p>
+                <div class="points">
+                    <span id="player_points">0</span>
+                </div>
+            </div>
+
+            <div id="countdown">
+
+            </div>
+
+            <div class="computer player-box">
+                <i class="fas fa-question-circle" id="comp"></i>
+                <p class="player_type">Computer</p>
+                <div class="points">
+                    <span id="computer_points">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="player_choices">
+
+            <div class="choice" id="rock">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+
+            <div class="choice" id="paper">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+
+            <div class="choice" id="scissors">
+                <i class="fas fa-hand-scissors scissors"></i>
+            </div>
+
+        </div>
+
+        <div class="winner_info">
+            <h2 class="winner_text"></h2>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

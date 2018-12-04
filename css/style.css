@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F5AF17;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main h1 {
+    text-align: center;
+    color: #043659;
+    font-size: 42px;
+}
+
+.main .game_field {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.main .game_field .points {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid #043659;
+    color: #E83000;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+.main .game_field .player-box {
+    width: 20%;
+    margin: 50px;
+    text-align: center;
+}
+
+.main .game_field .player-box i {
+    font-size: 70px;
+    color: #A39E09;
+
+}
+
+
+.main .game_field .player-box .player_type {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #043659;
+}
+
+.main .player_choices {
+    width: 90%;
+    height: 90px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    border: 2px solid #043659;
+    align-items: center;
+}
+
+.main .player_choices .choice {
+    border: 5px solid #043659;
+    background-color: #A39E09;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .player_choices .choice i {
+    font-size: 30px;
+    color: #043659;
+    align-items: center;
+}
+
+.winner_info {
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    background-color: #043659;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .main h1 {
+        font-size: 32px;
+    }
+
+    .main .game_field .player-box .player_type {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #043659;
+    }
+
+    .winner_info {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .main h1 {
+        font-size: 22px;
+    }
+
+    .main .game_field .player-box {
+        margin-top: 10px;
+    }
+
+    .main .game_field .player-box i {
+        font-size: 62px;
+    }
+
+    .main .game_field .points {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .main .game_field .player-box .player_type {
+        font-size: 11px;
+    }
+
+    .main .player_choices {
+        height: 60px;
+    }
+
+    .main .player_choices .choice {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main .player_choices .choice i {
+        font-size: 20px;
+    }
+
+    .winner_info {
+        font-size: 8px;
+    }
+}
