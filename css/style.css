@@ -113,7 +113,11 @@ body {
 
 @media (min-width: 360px) and (max-width: 500px) {
     .main h1 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .main .game_field .player-box {
+        margin-top: 10px;
     }
 
     .main .game_field .player-box .player_type {
@@ -122,8 +126,22 @@ body {
         color: #043659;
     }
 
+    .main .player_choices {
+        height: 60px;
+    }
+
+    .main .player_choices .choice {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main .player_choices .choice i {
+        font-size: 20px;
+    }
+
     .winner_info {
         font-size: 10px;
+        height: 60px;
     }
 }
 
